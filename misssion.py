@@ -10,13 +10,12 @@ def statisticsGet(stockCode,stockRenewed=""):
 def timeGet(DataTable,ListName='date'):
     raw_time = pd.to_datetime(DataTable.pop(ListName), format='%Y/%m/%d %H:%M')
     return raw_time
-def plot
- 
+def plotTrend(DataTable,Raw_time,Listname='close'):
+    plt.plot(Raw_time, DataTable[Listname])
+    plt.xlabel('Time')
+    plt.ylabel('Share Price')
+    plt.title('Trend')
+    plt.show()
 a=statisticsGet('sh600418')
-print (a)
 raw_time=timeGet(a)
-plt.plot(raw_time, a['close'])
-plt.xlabel('Time')
-plt.ylabel('Share Price')
-plt.title('Trend')
-plt.show()
+plotTrend(a,raw_time,'close')
