@@ -1,7 +1,6 @@
 import pandas as pd
 import akshare as ak
 from matplotlib import pyplot as plt
-import seaborn as sns 
 def statisticsGet(stockCode,stockRenewed=""):
     datatable=ak.stock_zh_a_daily(symbol=stockCode,adjust=stockRenewed)
     datatable=datatable.dropna()
@@ -17,4 +16,4 @@ def plotTrend(DataTable,Raw_time,Listname='close'):
     plt.ylabel('Share Price')
     plt.title('Trend')
     plt.show()
-
+ 
