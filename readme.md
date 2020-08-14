@@ -4,6 +4,7 @@
 ## 注意事项
 1. 在运行程序前需安装[akshare](https://www.akshare.xyz/zh_CN/latest/)、[pandas](https://pandas.pydata.org/)、[matplotlib](https://matplotlib.org/)、[seaborn](http://seaborn.pydata.org/)。
 2. 主程序为mission_finally.py,运行时保证其他文件在同一个文件夹内。
+3.报告文件为missionfinal.ipynb，notebook形式
 ## 小组分工
 ### 姓名
 组长：
